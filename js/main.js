@@ -1,16 +1,15 @@
-window.onscroll = function() {stickyNavbar(), getContentPos()};
 
-var navbar = document.getElementById("nav");
-var sticky = navbar.offsetTop;
+window.onload = function() {
+    window.onscroll = function() {stickyNavbar()};
 
-function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  }
-}
-
-function getContentPos(){
-    var menuItems = (Array.prototype.slice.call(document.getElementById("topnav").childNodes)).filter(
-      item => item.firstChild != null
-    );
-}
+    var nav = document.getElementsByClassName("nav-button-container")[0];
+    var navOffset = nav.offsetTop;
+    
+    function stickyNavbar() {
+      if (window.pageYOffset >= navOffset) {
+        nav.classList.add("nav-fixed-pos")
+      } else {
+        nav.classList.remove("nav-fixed-pos");
+      }
+    }
+};

@@ -1,9 +1,17 @@
+:root {
+    /*|----------------|
+      |--NAVBAR STUFF--|
+      |----------------|*/
+    --nav-title-container-colour: #ffffffff;
+    --nav-button-container-colour: red;
+
+    --nav-button-normal-colour: #dedede;
+    --nav-button-selected-colour: #b3b3b3;
+    --nav-button-hover-colour: red;
+}
+
 body {
     margin: 0%;
 }
 
-.fill-page {
-    height: 110%;
-    width: 24242px;
-    background-color: pink;
-}
+  

@@ -1,18 +1,39 @@
-.nav {
+#nav {
     background-color: white;
-    position: relative;
     width: 100%;
     height: 30%;
+    position: relative;
 }
 
-.nav .nav-title {
-    background-color: rgb(180, 0, 0);
+#nav .nav-title {
+    background-color: var(--nav-title-container-colour);
     height: 60%;
 }
 
-.nav .nav-button-container {
-    background-color: rgb(0, 75, 145);
-    position: sticky;
+#nav .nav-button-container {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    background-color: var(--nav-button-container-colour);
     height: 40%;
 }
+
+#nav .nav-button-container .nav-button {
+    background-color: var(--nav-button-normal-colour);
+    flex-grow: 1;
+}
+
+#nav .nav-button-container .nav-button:hover{
+    background-color: red;
+}
+
+.nav-fixed-pos {
+    position: fixed;
+    top: 0;
+    height: 12% !important;
+    width: 100%;
+  }
+
 
