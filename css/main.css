@@ -1,0 +1,9 @@
+body {
+    margin: 0%;
+}
+
+.fill-page {
+    height: 110%;
+    width: 24242px;
+    background-color: pink;
+}
