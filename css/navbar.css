@@ -12,7 +12,7 @@
 
 #nav .nav-button-container {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: center;
     align-content: stretch;
     align-items: stretch;
@@ -22,10 +22,11 @@
 
 #nav .nav-button-container .nav-button {
     background-color: var(--nav-button-normal-colour);
+    cursor: pointer;
     flex-grow: 1;
 }
 
-#nav .nav-button-container .nav-button:hover{
+#nav .nav-button-container .nav-button:hover {
     background-color: red;
 }
 
@@ -34,6 +35,4 @@
     top: 0;
     height: 12% !important;
     width: 100%;
-  }
-
-
+}

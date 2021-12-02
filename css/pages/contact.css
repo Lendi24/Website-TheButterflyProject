@@ -1,0 +1,88 @@
+/*|-------------|
+  |--Section 1--| 
+  |-------------|
+*/
+
+/*
+div {
+    border: 1px solid red;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}*/
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*|-------------|
+  |--Section 2--| 
+  |-------------|
+*/
+
+.dev-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+    background-color: var(--postcard-colour-container-background);
+    background-color: #696969;
+}
+
+.dev-section .dev-card {
+    margin: 10%;
+    border: solid;
+    border-width: 0 4vw 4vw 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: #ffffff;
+    background-color: #d9d9d9;
+}
+
+/*Card Head*/
+.dev-section .dev-card .card-head {
+    width: 100%;
+    text-align: center;
+}
+
+.dev-section .dev-card .card-head h1 {
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.dev-section .dev-card .card-head p {
+    font-size: 24px;
+}
+
+.dev-section .dev-card .card-head .img-container {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/*Card content*/
+.dev-section .dev-card .card-content p {
+    font-size: 30px;
+}
+
+.dev-section .dev-card .card-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dev-section .dev-card .card-content li {
+    font-size: 24px;
+}
+
+/*Card footer*/
+.dev-section .dev-card .card-footer {
+    align-self: flex-start;
+}
+
+.dev-section .dev-card .card-footer div {
+    display: flex;
+    flex-direction: row;
+}
