@@ -3,7 +3,7 @@
   |-------------|
 */
 
-.page-home .section-1 {
+#page-home .section-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     height: 100%;
 }
 
-.page-home .section-1 .download-container {
+#page-home .section-1 .download-container {
     align-self: center;
     height: 20%;
 }
