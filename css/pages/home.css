@@ -4,23 +4,37 @@
 */
 
 #page-home .section-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://placekitten.com/1920/1080");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://placekitten.com/1920/1080");
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #page-home .section-1 .download-container {
-  align-self: center;
-  background-color: #ffffff5d;
-  height: 20%;
+    align-self: center;
+    background-color: #ffffff5d;
+    height: 20%;
+}
+
+.divider-rot-left {
+    background-color: #fff;
+    border-top-color: black;
+    border-top-width: 5px;
+    border-top-style: solid;
+
+    width: 100%;
+    height: 7%;
+    align-self: center;
+    place-self: flex;
+    transform: translate(0, 50%);
 }
