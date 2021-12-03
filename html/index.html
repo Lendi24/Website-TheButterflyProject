@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/pages/home.css">
     <link rel="stylesheet" href="/css/pages/contact.css">
 
+    <script src="/js/switch.js"></script>
     <script src="/js/main.js"></script>
     <title>TheButterflyProject</title>
 </head>
@@ -19,16 +20,16 @@
             <h2>Showcasing evolution</h2>
         </div>
         <div class="nav-button-container">
-            <div class="nav-button button">
+            <div class="nav-button button" onclick="SwitchPage(0)">
                 <p>About the project</p>
             </div>
-            <div class="nav-button button">
+            <div class="nav-button button" onclick="SwitchPage(1)">
                 <p>Credits and download</p>
             </div>
         </div>
     </div>
 
-    <div id="page-home">
+    <div id="page-home" class="page">
         <div class="section-1">
             <div class="download-container">
                 <div class="big-button button" id="page-home-download-button">
@@ -40,7 +41,7 @@
         <div id="paralax-image"></div>
     </div>
 
-    <div id="page-contact">
+    <div id="page-contact" class="page hidden">
         <div class="section-1">
             <h1>Project:</h1>
             <div class="project-container">

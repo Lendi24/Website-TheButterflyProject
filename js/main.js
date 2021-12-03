@@ -1,4 +1,3 @@
-
 window.onload = function() {
     window.onscroll = function() {stickyNavbar()};
 
@@ -13,3 +12,17 @@ window.onload = function() {
       }
     }
 };
+
+function SwitchPage(pageIndex) {
+  var pages = document.getElementsByClassName("page");
+
+  for (let i = 0; i < pages.length; i++) {
+      pages[i].classList.remove("hidden");
+  }
+
+  for (let i = 0; i < pages.length; i++) {
+    if (i != pageIndex) {
+      pages[i].classList.add("hidden");
+    }
+  }
+}
