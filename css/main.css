@@ -12,6 +12,7 @@
 
 body {
     margin: 0%;
+    overflow-x: hidden;
     font-family: sans-serif;
 }
 
@@ -22,7 +23,5 @@ body {
 
 .hidden {
     visibility: hidden !important;
-    display: none !important; 
+    display: none !important;
 }
-
-  

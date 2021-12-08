@@ -13,11 +13,12 @@ window.onload = function() {
 };
 
 function RotationalDivider(dividers) {
-    var newRotate = Math.atan(dividers[0].clientHeight / dividers[0].clientWidth) * 180 / Math.PI;
+    var height = window.getComputedStyle(document.getElementsByClassName("infosection")[0], "::before").height.slice(0, -2);
+    var width = window.getComputedStyle(document.getElementsByClassName("infosection")[0], "::before").width.slice(0, -2);
+    var newRotate = Math.atan(height / width) * 180 / Math.PI;
 
     for (let i = 0; i < dividers.length; i++) {
-
-        window.getComputedStyle(dividers[i], '::before').textContent = 'My computed font-size is ';
+        dividers[i].style.setProperty('--divider-rotation', newRotate + "deg");
     }
 }
 
