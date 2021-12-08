@@ -1,7 +1,7 @@
 window.onload = function() {
     var nav = document.getElementsByClassName("nav-button-container")[0];
     var navOffset = nav.offsetTop;
-    var dividers = document.getElementsByClassName("divider-rot-left");
+    var dividers = document.getElementsByClassName("infosection");
 
     window.onscroll = function() {
         stickyNavbar(nav, navOffset);
@@ -16,7 +16,8 @@ function RotationalDivider(dividers) {
     var newRotate = Math.atan(dividers[0].clientHeight / dividers[0].clientWidth) * 180 / Math.PI;
 
     for (let i = 0; i < dividers.length; i++) {
-        dividers[i].style = "rotate: " + newRotate + "deg;";
+
+        window.getComputedStyle(dividers[i], '::before').textContent = 'My computed font-size is ';
     }
 }
 
