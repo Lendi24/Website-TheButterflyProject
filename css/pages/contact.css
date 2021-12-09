@@ -3,8 +3,8 @@
   |-------------|
 */
 
-.section-1 {
-    margin: 5%;
+.section-1 h1 {
+    margin: 0 0 0 4vw;
 }
 
 /*
@@ -18,23 +18,27 @@ img {
 }*/
 
 .project-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.project-container p {
-    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+    background-color: var(--postcard-colour-container-background);
 }
 
 .project-container .download-container {
-    margin: 4vw;
     background-color: #696969;
+    margin: 4vw;
+}
+
+.project-container .download-container p {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4vw 0 2vw 4vw;
 }
 
 .project-container .download-container .download-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin: 4vw;
+    margin: 2vw;
 }
 
 .project-container .download-container .download-buttons a{
@@ -50,15 +54,32 @@ img {
 .project-container .download-container .download-buttons a img{
     width: 40px;
     height: 40px;
-    margin: 4vw;
+    margin: 2vw;
 }
 
 .project-container .download-container .download-buttons a p{
     color: black;
-    margin: 2vw 4vw 0 0;
+    margin: 0 2vw 0 0;
+    font-weight: normal;
+    font-size: 24px;
 }
 
+.project-container .github-container {
+    background-color: #696969;
+    margin: 4vw;
+}
 
+.project-container .github-container a img {
+    width: 500px;
+    margin: 4vw;
+}
+
+.project-container .github-container p {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4vw 0 0 4vw;
+}
 
 /*|-------------|
   |--Section 2--| 
@@ -66,7 +87,11 @@ img {
 */
 
 .section-2 {
-    margin: 5%;
+    margin: 4vw;
+}
+
+.section-2 h1 {
+    margin: 0 0 4vw 0;
 }
 
 .dev-section {
