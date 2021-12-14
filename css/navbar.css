@@ -18,6 +18,7 @@
     align-items: stretch;
     background-color: var(--nav-button-container-colour);
     height: 40%;
+    z-index: 2;
 }
 
 #nav .nav-button-container .nav-button {
@@ -27,7 +28,7 @@
 }
 
 #nav .nav-button-container .nav-button:hover {
-    background-color: red;
+    background-color: var(--nav-button-hover-colour);
 }
 
 .nav-fixed-pos {
