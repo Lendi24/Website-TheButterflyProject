@@ -1,7 +1,16 @@
+#page-contact {
+    background-color: #b3e0ab;
+}
+
 /*|-------------|
   |--Section 1--| 
   |-------------|
 */
+
+.section-1 h1 {
+    margin: 0 0 0 4vw;
+    padding-top: 4vw;
+}
 
 /*
 div {
@@ -14,22 +23,92 @@ img {
 }*/
 
 .project-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+    background-color: var(--postcard-colour-container-background);
 }
 
+.project-container .download-container {
+    background-color: #696969;
+    margin: 4vw;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
+}
 
+.project-container .download-container p {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4vw 0 2vw 4vw;
+}
+
+.project-container .download-container .download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vw;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
+}
+
+.project-container .download-container .download-buttons a{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2vw;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.project-container .download-container .download-buttons a img{
+    width: 40px;
+    height: 40px;
+    margin: 2vw;
+}
+
+.project-container .download-container .download-buttons a p{
+    color: black;
+    margin: 0 2vw 0 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.project-container .github-container {
+    background-color: #696969;
+    margin: 4vw;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
+}
+
+.project-container .github-container a img {
+    width: 500px;
+    margin: 4vw;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
+}
+
+.project-container .github-container p {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4vw 0 0 4vw;
+}
 
 /*|-------------|
   |--Section 2--| 
   |-------------|
 */
 
+.section-2 {
+    padding: 4vw;
+}
+
+.section-2 h1 {
+    margin: 0 0 4vw 0;
+}
+
 .dev-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, auto));
     background-color: var(--postcard-colour-container-background);
     background-color: #696969;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
 }
 
 .dev-section .dev-card {
@@ -41,6 +120,7 @@ img {
     align-items: center;
     border-color: #ffffff;
     background-color: #d9d9d9;
+    filter: drop-shadow(0 10px 5px #2e2e2e)
 }
 
 /*Card Head*/
@@ -52,10 +132,12 @@ img {
 .dev-section .dev-card .card-head h1 {
     font-weight: bold;
     font-size: 39px;
+    margin: 4vw 4vw 0 4vw;
 }
 
 .dev-section .dev-card .card-head p {
     font-size: 24px;
+    margin-top: 1vh;
 }
 
 .dev-section .dev-card .card-head .img-container {
@@ -63,26 +145,51 @@ img {
     background-color: #ffffff;
 }
 
+.dev-section .dev-card .card-head .img-container img {
+    border-radius: 50%;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    width: 190px;
+}
+
 /*Card content*/
+.dev-section .dev-card .card-content {
+    margin: 0 4vw 4vw 4vw;
+}
 .dev-section .dev-card .card-content p {
-    font-size: 30px;
+    font-size: 24px;
+    
 }
 
 .dev-section .dev-card .card-content h1 {
     font-size: 30px;
     font-weight: bold;
+    margin: 0;
 }
 
 .dev-section .dev-card .card-content li {
     font-size: 24px;
+    
 }
 
 /*Card footer*/
 .dev-section .dev-card .card-footer {
     align-self: flex-start;
+    margin: auto 0 4vw 4vw;
 }
 
 .dev-section .dev-card .card-footer div {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 2vh 0 0 0;
+}
+
+.dev-section .dev-card .card-footer div img {
+    width: 40px;
+    height: 40px;
+}
+
+.dev-section .dev-card .card-footer div a {
+    margin: 0 0 0 1vw;
 }
