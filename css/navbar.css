@@ -3,6 +3,7 @@
     width: 100%;
     height: 30%;
     position: relative;
+    z-index: 100;
 }
 
 #nav .nav-title {
