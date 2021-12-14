@@ -2,6 +2,7 @@ window.onload = function() {
     var nav = document.getElementsByClassName("nav-button-container")[0];
     var navOffset = nav.offsetTop;
     var dividers = document.getElementsByClassName("infosection");
+    RotationalDivider(dividers);
 
     window.onscroll = function() {
         stickyNavbar(nav, navOffset);
@@ -32,6 +33,7 @@ function stickyNavbar(nav, navOffset) {
 
 function SwitchPage(pageIndex) {
     var pages = document.getElementsByClassName("page");
+    window.scrollTo(0, 0);
 
     for (let i = 0; i < pages.length; i++) {
         pages[i].classList.remove("hidden");

@@ -4,6 +4,8 @@
     height: 30%;
     position: relative;
     z-index: 100;
+    text-align: center;
+
 }
 
 #nav .nav-title {
