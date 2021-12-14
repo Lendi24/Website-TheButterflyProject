@@ -121,7 +121,7 @@ img {
 .dev-section .dev-card .card-head h1 {
     font-weight: bold;
     font-size: 39px;
-    margin-bottom: 0;
+    margin: 4vw 4vw 0 4vw;
 }
 
 .dev-section .dev-card .card-head p {
@@ -143,7 +143,7 @@ img {
 
 /*Card content*/
 .dev-section .dev-card .card-content {
-    margin-left: 4vw;
+    margin: 0 4vw 4vw 4vw;
 }
 .dev-section .dev-card .card-content p {
     font-size: 30px;
@@ -152,16 +152,18 @@ img {
 .dev-section .dev-card .card-content h1 {
     font-size: 30px;
     font-weight: bold;
+    margin: 0;
 }
 
 .dev-section .dev-card .card-content li {
     font-size: 24px;
+    
 }
 
 /*Card footer*/
 .dev-section .dev-card .card-footer {
     align-self: flex-start;
-    margin: 4vw 0 4vw 4vw;
+    margin: auto 0 4vw 4vw;
 }
 
 .dev-section .dev-card .card-footer div {
@@ -176,6 +178,6 @@ img {
     height: 40px;
 }
 
-.dev-section .dev-card .card-footer div p {
+.dev-section .dev-card .card-footer div a {
     margin: 0 0 0 1vw;
 }
