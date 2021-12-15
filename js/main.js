@@ -92,6 +92,6 @@ function ModifyDownloadButton(){
         '<div class="big-button button" id="page-home-download-button" onclick="window.location='+"'"+downloadLink+"'"+'">'+
             '<p>Download for '+hostOS+'</p>'+
         '</div>'+
-        '<a href="putsomejsheretoloadnextpage">Download for another OS</a>'
+        '<a onclick="SwitchPage(1)">Download for another OS</a>'
     }
 }
