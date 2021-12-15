@@ -3,6 +3,7 @@ window.onload = function() {
     var navOffset = nav.offsetTop;
     var dividers = document.getElementsByClassName("infosection");
     RotationalDivider(dividers);
+    ModifyDownloadButton();
 
     window.onscroll = function() {
         stickyNavbar(nav, navOffset);
@@ -43,5 +44,54 @@ function SwitchPage(pageIndex) {
         if (i != pageIndex) {
             pages[i].classList.add("hidden");
         }
+    }
+}
+
+function ModifyDownloadButton(){
+    var buttonCont = document.getElementsByClassName("download-container")[0];
+    var hostOS;
+    var downloadLink;
+
+    //Is it windows?
+    if (navigator.appVersion.indexOf("Win") != -1) {
+        hostOS = "Windows 🪟"; 
+        downloadLink= "https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/windows-TheButterflyProject.zip";
+    }
+
+    //Is it macos?
+    else if (navigator.appVersion.indexOf("Mac") != -1) {
+        hostOS = "MacOS 🍎";
+        downloadLink = "https://m.youtube.com/watch?v=mOYZaiDZ7BM";
+    }
+
+    //Skipping ios since there is no download for it
+
+    //Is it some sort of linux
+    else if (navigator.appVersion.indexOf("Android") != -1) { 
+        hostOS = "Android 🤖"; 
+        downloadLink ="https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/android-TheButterflyProject.apk"; 
+    }
+    else if (navigator.appVersion.indexOf("Ubuntu") != -1) {
+        hostOS = "Ubuntu 🐧";
+        downloadLink = "https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/linux-TheButterflyProject.zip";
+    }
+    else if (navigator.appVersion.indexOf("Manjaro") != -1) {
+        hostOS = "Manjaro 🐧";
+        downloadLink = "https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/linux-TheButterflyProject.zip";
+    }
+
+    else if (navigator.appVersion.indexOf("Linux") != -1) {
+        hostOS = "Linux 🐧";
+        downloadLink = "https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/linux-TheButterflyProject.zip";
+
+    } 
+    //There is no download for bsd either...
+
+    if (hostOS != undefined) {
+        buttonCont.innerHTML = 
+        '<div class="big-button button" id="page-home-download-button" onclick="window.location='+"'"+downloadLink+"'"+'">'+
+            '<p>Download for '+hostOS+'</p>'+
+        '</div>'+
+        '<a href="putsomejsheretoloadnextpage">Download for another OS</a>'
     }
 }
