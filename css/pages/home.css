@@ -134,7 +134,8 @@
     background-color: var(--home-section-color);
     ;
     border-top-color: black;
-    border-top-width: 5px;
+    border-top-width: 15px;
+    filter: drop-shadow(0 -10px 5px var(--con-dropshadow-color));
 
     height: var(--divider-height);
     transform: translate(0, -50%);
@@ -154,7 +155,8 @@
     background-color: var(--home-section-color);
     ;
     border-bottom-color: black;
-    border-bottom-width: 5px;
+    border-bottom-width: 15px;
+    filter: drop-shadow(0 10px 5px var(--con-dropshadow-color));
 
     height: var(--divider-height);
     transform: translate(0, 50%);
