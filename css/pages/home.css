@@ -1,3 +1,7 @@
+#page-home {
+    width:100%;
+}
+
 /*|-------------|
   |--Section 1--| 
   |-------------|
@@ -74,12 +78,23 @@
 .infosection {
     --divider-rotation: 0deg;
     --divider-height: 38px;
-    --infosection-background-color: rgb(122, 2, 2);
 
-    background-color: var(--infosection-background-color);
+    background-color: var(--home-section-color);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.infosection .text-container {
+    margin: 0 10% 0 10%;
+}
+
+.infosection .text-container h2 {
+    font-size: 250%;
+}
+
+.infosection .text-container p {
+    font-size: 100%;
 }
 
 .infosection .info {
@@ -88,23 +103,35 @@
 }
 
 .infosection .info .text-container {
-    margin: 20px;
+    margin: 0 6vw 0 6vw;
     width: 50%;
+}
+
+.infosection .info .text-container h2{
+    font-size: 300%;
+}
+
+.infosection .info .text-container p{
+    font-size: 150%;
 }
 
 .infosection .info .image-container {
     display: flex;
     flex-direction: column;
+    margin-right: 4vw;
+    width: 50%;
 }
 
 .infosection .info .image-container img {
     margin: 20px;
+    
+    width: 70%;
 }
 
 .infosection::before {
     flex-basis: 100%;
     border-top-style: solid;
-    background-color: var(--infosection-background-color);
+    background-color: var(--home-section-color);
     ;
     border-top-color: black;
     border-top-width: 5px;
@@ -124,7 +151,7 @@
 .infosection::after {
     flex-basis: 100%;
     border-bottom-style: solid;
-    background-color: var(--infosection-background-color);
+    background-color: var(--home-section-color);
     ;
     border-bottom-color: black;
     border-bottom-width: 5px;

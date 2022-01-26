@@ -8,6 +8,18 @@
     --nav-button-normal-colour: #dedede;
     --nav-button-selected-colour: #b3b3b3;
     --nav-button-hover-colour: #b3b3b3;
+
+    /*
+        Home Stuff
+    */
+    --home-section-color: #ffffff;
+
+    /*
+        Contact Stuff    
+    */
+    --con-container-color: #696969;
+    --con-button-color: #ffffff;
+    --con-dropshadow-color: #2e2e2e;
 }
 
 body {
