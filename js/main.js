@@ -1,3 +1,5 @@
+var currentPage;
+
 window.onload = function() {
     var nav = document.getElementsByClassName("nav-button-container")[0];
     var navOffset = nav.offsetTop;
@@ -10,7 +12,9 @@ window.onload = function() {
     };
 
     window.onresize = function() {
-        RotationalDivider(dividers);
+        if (currentPage == 0) {
+            RotationalDivider(dividers);
+        }
     };
 };
 
@@ -33,6 +37,7 @@ function stickyNavbar(nav, navOffset) {
 }
 
 function SwitchPage(pageIndex) {
+    currentPage = pageIndex;
     var pages = document.getElementsByClassName("page");
     window.scrollTo(0, 0);
 
@@ -83,7 +88,6 @@ function ModifyDownloadButton(){
     else if (navigator.appVersion.indexOf("Linux") != -1) {
         hostOS = "Linux 🐧";
         downloadLink = "https://github.com/Lendi24/TheButterflyProject/releases/download/alpha/linux-TheButterflyProject.zip";
-
     } 
     //There is no download for bsd either...
 
