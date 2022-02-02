@@ -94,6 +94,7 @@ function ModifyDownloadButton(){
     if (hostOS != undefined) {
         buttonCont.innerHTML = 
         '<div class="big-button button" id="page-home-download-button" onclick="window.location='+"'"+downloadLink+"'"+'">'+
+            '<img src="/assets/icons/download.svg">'+
             '<p>Download for '+hostOS+'</p>'+
         '</div>'+
         '<a onclick="SwitchPage(1)">Download for another OS</a>'
