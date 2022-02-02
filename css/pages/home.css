@@ -94,7 +94,7 @@
 }
 
 .infosection .text-container p {
-    font-size: 100%;
+    font-size: 150%;
 }
 
 .infosection .info {
@@ -118,8 +118,8 @@
 .infosection .info .image-container {
     display: flex;
     flex-direction: column;
-    margin-right: 4vw;
     width: 50%;
+    justify-content: center;
 }
 
 .infosection .info .image-container img {
@@ -171,4 +171,24 @@
     align-self: center;
     position: relative;
     width: 120%;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-self: center;
+    width: 20%;
+    background-color: #0000004d;
+    padding: 0 1.5vw 0 1.5vw;
+}
+
+.scroll-container p {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #ffffff5d;
+}
+
+.scroll-container img {
+    width: 60px;
 }
