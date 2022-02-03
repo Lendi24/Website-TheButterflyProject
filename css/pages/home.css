@@ -6,7 +6,6 @@
   |--Section 1--| 
   |-------------|
 */
-
 #page-home .section-1 {
     display: flex;
     flex-direction: column;
@@ -29,6 +28,12 @@
     background-color: #ffffff5d;
     height: 20%;
 }
+
+#page-home .section-1 .download-container .big-button:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
 
 
 /*|-------------|
@@ -138,9 +143,7 @@
     filter: drop-shadow(0 -10px 5px var(--con-dropshadow-color));
 
     height: var(--divider-height);
-    transform: translate(0, -50%);
-
-    rotate: var(--divider-rotation);
+    transform: rotate(var(--divider-rotation)) translate(0, -50%);
     content: " ";
     display: block;
 
@@ -159,9 +162,8 @@
     filter: drop-shadow(0 10px 5px var(--con-dropshadow-color));
 
     height: var(--divider-height);
-    transform: translate(0, 50%);
 
-    rotate: calc(var(--divider-rotation) * -1);
+    transform: rotate(calc(var(--divider-rotation) * -1)) translate(0, 50%);
     content: " ";
     display: block;
 
