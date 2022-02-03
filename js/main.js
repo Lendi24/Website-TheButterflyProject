@@ -3,6 +3,7 @@ var currentPage;
 window.onload = function() {
     var nav = document.getElementsByClassName("nav-button-container")[0];
     var navOffset = nav.offsetTop;
+    console.log(navOffset);
     var dividers = document.getElementsByClassName("infosection");
     RotationalDivider(dividers);
     ModifyDownloadButton();
@@ -39,15 +40,20 @@ function stickyNavbar(nav, navOffset) {
 function SwitchPage(pageIndex) {
     currentPage = pageIndex;
     var pages = document.getElementsByClassName("page");
+    var buttons = document.getElementsByClassName("nav-button");
     window.scrollTo(0, 0);
 
     for (let i = 0; i < pages.length; i++) {
         pages[i].classList.remove("hidden");
+        buttons[i].classList.remove("active");
     }
 
     for (let i = 0; i < pages.length; i++) {
         if (i != pageIndex) {
             pages[i].classList.add("hidden");
+        }
+        else {
+            buttons[i].classList.add("active");
         }
     }
 }
